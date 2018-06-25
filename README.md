@@ -22,7 +22,7 @@ $router.goback()
 // 增强原方法，好处是旧的业务模块不需要任何变动
 Router.prototype.goback = function () {
   store.commit('changeIsBack', true)
-  window.history.go(-1)
+  this.back(-1)
 }
 
 ```
